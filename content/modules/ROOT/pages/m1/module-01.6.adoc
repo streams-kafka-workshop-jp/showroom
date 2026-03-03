@@ -17,7 +17,7 @@ image::m1/cg-rebalance.png[]
 
 実際にどのように動作するか見てみましょう。
 
-* 再度、*上部のターミナル* でkey-valueペアのメッセージを生成するproducerを実行します。 
+* 再度、 *上部のターミナル* でkey-valueペアのメッセージを生成するproducerを実行します。 
 +
 [source,sh,role="execute",subs=attributes+]
 ----
@@ -31,7 +31,7 @@ i=1; while true; do echo "k$((i%10)):msg-$i"; i=$((i+1)); sleep 0.3; done | \
 
 * それでは、簡単なbashスクリプトを使用して、同じconsumer group *demo-cg* で3つのconsumerを1つずつ起動しましょう。スクリプトを進めて新しいconsumerを起動し続けると、consumer間でpartitionのrebalancingが発生することがわかります。
 
-* toolboxコンテナ内にいる場合は、*下部のターミナル* でシェルを終了します。
+* toolboxコンテナ内にいる場合は、 *下部のターミナル* でシェルを終了します。
 +
 [source,bash,role="execute",subs=attributes+]
 ----
@@ -46,7 +46,7 @@ oc project kafka-{user_name}
 ----
 
 
-* まず、*下部のターミナル* で以下のコマンドを実行して最初のconsumerを起動します。*2つ目のconsumerを起動するよう促されても、まだEnterを押さないでください。* 
+* まず、 *下部のターミナル* で以下のコマンドを実行して最初のconsumerを起動します。 *2つ目のconsumerを起動するよう促されても、まだEnterを押さないでください。* 
 +
 [source,bash,role="execute",subs=attributes+]
 ----
@@ -64,7 +64,7 @@ image::m1/demo-cg-c1.png[]
 
 
 
-* すべてのpartitionがcg-c1に割り当てられていることを確認したら、**下部のターミナル** でEnterを押して2つ目のconsumer（cg-c2）を起動します。*まだ3つ目のconsumerを起動するためにEnterを押さないでください。*
+* すべてのpartitionがcg-c1に割り当てられていることを確認したら、**下部のターミナル** でEnterを押して2つ目のconsumer（cg-c2）を起動します。 *まだ3つ目のconsumerを起動するためにEnterを押さないでください。*
 
 * https://amq-streams-console-{user_name}.{openshift_cluster_subdomain}/kafka[streams console, window="_amqstreams"]に戻って、cg-c1とcg-c2に割り当てられているpartitionを確認します。以下に示すように、rebalanceが発生し、partitionがcg-c1とcg-c2の間で再割り当てされることがわかります。
 
@@ -73,7 +73,7 @@ image::m1/demo-cg-c1.png[]
 +
 image::m1/demo-cg-c1-c2.png[]
 
-* *下部のターミナル* でEnterを押して3つ目のconsumer（cg-c3）を起動します。別のrebalanceが発生し、partitionがcg-c1、cg-c2、cg-c3の間で再割り当てされることがわかります。*まだ4つ目のconsumerを起動するためにEnterを押さないでください。*
+* *下部のターミナル* でEnterを押して3つ目のconsumer（cg-c3）を起動します。別のrebalanceが発生し、partitionがcg-c1、cg-c2、cg-c3の間で再割り当てされることがわかります。 *まだ4つ目のconsumerを起動するためにEnterを押さないでください。*
 
 * https://amq-streams-console-{user_name}.{openshift_cluster_subdomain}/kafka[streams console, window="_amqstreams"]に戻って、cg-c1、cg-c2、cg-c3に割り当てられているpartitionを確認します。
 +
@@ -114,7 +114,7 @@ image::m1/group-lag.png[]
 +
 image::m1/demo-cd-c1-only.png[]
 
-* それでは、*上部のターミナル* でproducerを停止し（Ctrl+C）、*下部のターミナル* でEnterを押してすべてのconsumerも停止してください。
+* それでは、 *上部のターミナル* でproducerを停止し（Ctrl+C）、 *下部のターミナル* でEnterを押してすべてのconsumerも停止してください。
 
 
  
@@ -133,7 +133,7 @@ image::m1/demo-cd-c1-only.png[]
 // * A different group has its own offsets, so it can re-read the entire topic independently.
 
 === クリーンアップ
-* *上部のターミナル* で*ctrl+c* を入力してproducerを停止します。
+* *上部のターミナル* で *ctrl+c* を入力してproducerを停止します。
 * *下部のターミナル* でEnterを押して、残りのすべてのconsumerを停止します。
 
 === 次のステップ

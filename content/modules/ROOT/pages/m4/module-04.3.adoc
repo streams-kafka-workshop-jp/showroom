@@ -50,7 +50,7 @@ image::m4/loyalty-dashboard.png[]
 
 * ロイヤルティプログラムアプリケーションチームは、Globex retailアプリケーションデータベースと直接やり取りすることなく、Debeziumによって生成されたChange Eventを活用する独自のサービスとアプリケーションを構築できるようになりました。これにより、ロイヤルティプログラムがretailアプリケーションから切り離され、イベント駆動型アプリケーションの構築においてより柔軟性とスケーラビリティが実現されます。
 
-* 別のユースケースとして、*リアルタイム注文トラッカーの構築* があります。これは倉庫のスクリーンに表示され、作成された注文を倉庫チームが迅速に処理できるように着信注文を表示します。サンプルアプリケーションはlink:https://cdc-dashboard-globex-{user_name}.{openshift_cluster_subdomain}/warehouse[こちら, window="warehouse"]で確認できます。
+* 別のユースケースとして、 *リアルタイム注文トラッカーの構築* があります。これは倉庫のスクリーンに表示され、作成された注文を倉庫チームが迅速に処理できるように着信注文を表示します。サンプルアプリケーションはlink:https://cdc-dashboard-globex-{user_name}.{openshift_cluster_subdomain}/warehouse[こちら, window="warehouse"]で確認できます。
 +
 image::m4/warehouse-dashboard.png[]
 

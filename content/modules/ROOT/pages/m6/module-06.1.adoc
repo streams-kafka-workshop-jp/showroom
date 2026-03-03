@@ -127,7 +127,7 @@ image::m6/tool-box-shell.png[]
 +
 [IMPORTANT]
 ====
-toolboxコンテナに接続していない場合は、*上部のターミナル* で以下のコマンドを使用して再接続してください。
+toolboxコンテナに接続していない場合は、 *上部のターミナル* で以下のコマンドを使用して再接続してください。
 
 [source,sh,role="execute",subs=attributes]
 ----
@@ -172,11 +172,11 @@ pod "topic-create" deleted
 pod kafka-user1/topic-create terminated (Error)
 ----
 
-* これは、*認証なしでセキュアな9095 Listenerを使用している* ためです。
+* これは、 *認証なしでセキュアな9095 Listenerを使用している* ためです。
 
 * このクラスタには、必要なすべての権限を持つ管理者ユーザーが既に作成されています。このユーザーを使用して、認証付きのセキュアなListenerでTopicを作成します。
 
-* まず、必要な認証情報を含むローカル設定ファイルを作成しましょう。*上部のターミナル* で以下のコマンドを実行します。
+* まず、必要な認証情報を含むローカル設定ファイルを作成しましょう。 *上部のターミナル* で以下のコマンドを実行します。
 +
 [source,sh,role="execute",subs=attributes+]
 ----

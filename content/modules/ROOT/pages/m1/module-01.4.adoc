@@ -47,12 +47,12 @@ kafka-console-consumer.sh --bootstrap-server $BOOTSTRAP --topic demo \
 
 
 
-* producerが以前に送信したメッセージがconsumerターミナルに表示され、consumeされていることを確認します。*null値* は、メッセージ送信時にkeyが提供されなかったことを示しています。
+* producerが以前に送信したメッセージがconsumerターミナルに表示され、consumeされていることを確認します。 *null値* は、メッセージ送信時にkeyが提供されなかったことを示しています。
 
 
 * producerターミナルでさらにメッセージを入力し、consumerターミナルでconsumeされることを確認します。
 
-* keyを提供していないため、メッセージはpartition間に分散される*可能性があり* 、その場合は順序が保証されません。次のセクションでは、partitionとkeyを使用して順序を保証する方法を見ていきます。
+* keyを提供していないため、メッセージはpartition間に分散される *可能性があり* 、その場合は順序が保証されません。次のセクションでは、partitionとkeyを使用して順序を保証する方法を見ていきます。
 +
 NOTE: 送信するメッセージが非常に少ないため、すべてのメッセージが同じpartitionに入る可能性があります。しかし、実際の環境では1秒あたり数千のメッセージがあり、keyがない場合、メッセージは異なるpartitionに入る可能性があります。
 
@@ -75,7 +75,7 @@ image::m1/console_consumed_partition.png[]
 image::m1/console_consumed_partition_messages.png[]
 
 === クリーンアップ
-* *上部のターミナル* で *ctrl+c* を入力し、*下部のターミナル* で *ctrl+c* を入力して、それぞれproducerとconsumerを停止します。
+* *上部のターミナル* で *ctrl+c* を入力し、 *下部のターミナル* で *ctrl+c* を入力して、それぞれproducerとconsumerを停止します。
 
 === 次のステップ
 producerとconsumerの基本を確認したので、次のセクションでは、partitionとkeyを使用してメッセージの順序付けを実現する方法を学習しましょう。

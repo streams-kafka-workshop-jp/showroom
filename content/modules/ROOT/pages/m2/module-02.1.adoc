@@ -47,7 +47,7 @@ image::m2/module-kafka-api-dependencies.png[]
 
 このセクションでは、コードを分解し、**Kafka Producer** がどのように設定され、内部でどのように機能するかを説明します。
 
-* それでは、producerコードを見てみましょう。`module-kafka-api`フォルダで、file explorerの*src/main/java/com/kafka/tutorial/SimpleKafkaProducer.java* ファイルをクリックして開きます。
+* それでは、producerコードを見てみましょう。`module-kafka-api`フォルダで、file explorerの *src/main/java/com/kafka/tutorial/SimpleKafkaProducer.java* ファイルをクリックして開きます。
 +
 image::m2/simple-kafka-producer-nav.png[]
 

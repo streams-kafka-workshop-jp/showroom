@@ -10,7 +10,7 @@ Kafka Consumer APIは、開発者がアプリケーション内でKafka consumer
 
 === シンプルなConsumerアプリケーション
 
-. それでは、consumerコードを見てみましょう。`module-kafka-api`フォルダで、file explorerの*src/main/java/com/kafka/tutorial/SimpleKafkaConsumer.java* ファイルをクリックして開きます。
+. それでは、consumerコードを見てみましょう。`module-kafka-api`フォルダで、file explorerの *src/main/java/com/kafka/tutorial/SimpleKafkaConsumer.java* ファイルをクリックして開きます。
 +
 image::m2/module-kafka-api-consumer.png[]
 
@@ -25,7 +25,7 @@ image::m2/module-kafka-api-consumer.png[]
 
 === Consumer設定
 
-* 設定はコードの*47-82行目* で定義された`Consumer Properties`を使用して定義されます。
+* 設定はコードの *47-82行目* で定義された`Consumer Properties`を使用して定義されます。
 
 このリファレンスは、関心事(offset、coordination、pollingなど)ごとにconsumer設定オプションを整理しています。
 **Used in example?** 列は、そのオプションがコードに含まれているかどうかを示します。
