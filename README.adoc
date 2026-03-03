@@ -1,1 +1,187 @@
+= showroom フォルダ構成ガイド
 
+このドキュメントは、streams-kafka-workshop の Web ページコンテンツを含む `./showroom` フォルダの構造を説明します。
+
+== 概要
+
+`showroom` フォルダは Antora を使用した静的サイトジェネレータで、Kafka ワークショップのドキュメントサイトを構築します。
+
+* *サイトタイトル*: The Kafka Workshop
+* *ドキュメント形式*: AsciiDoc
+* *ビルドシステム*: Antora
+* *テーマ*: RHDP Showroom Theme
+
+== ディレクトリ構造
+
+----
+./showroom/
+├── .github/
+│   └── workflows/
+│       └── gh-pages.yml              # GitHub Pages へのデプロイワークフロー
+├── content/                           # メインコンテンツディレクトリ
+│   ├── antora.yml                     # Antora プロジェクト設定
+│   ├── lib/                           # Antora 拡張機能
+│   │   ├── all-attributes-console-extension.js
+│   │   ├── attributes-page-extension.js
+│   │   ├── dev-mode.js
+│   │   └── unlisted-pages-extension.js
+│   └── modules/
+│       └── ROOT/                      # ルートモジュール
+│           ├── nav.adoc               # ナビゲーション定義
+│           ├── assets/
+│           │   └── images/            # 画像リソース（カテゴリ別）
+│           └── pages/                 # ドキュメントページ
+├── utilities/                         # ビルド・開発用ユーティリティ
+│   ├── lab-build                      # サイトビルドスクリプト
+│   ├── lab-clean                      # クリーンアップスクリプト
+│   ├── lab-serve                      # ローカルサーバー起動スクリプト
+│   └── lab-stop                       # サーバー停止スクリプト
+├── default-site.yml                   # Antora サイト設定
+├── README.adoc                        # プロジェクト README
+└── .gitignore
+----
+
+== ファイル統計
+
+=== ファイルタイプ別
+* *PNG 画像*: 146 ファイル
+* *AsciiDoc ドキュメント*: 41 ファイル
+* *JavaScript*: 4 ファイル
+* *YAML 設定*: 3 ファイル
+
+== コンテンツ構成
+
+=== 1. ナビゲーション構造（nav.adoc）
+
+ワークショップは以下の6つのモジュールで構成されています：
+
+==== Module 1: Fundamentals of Kafka and Basic Concepts
+* *ページ数*: 9ページ（finish含む）
+* *画像数*: 35枚
+* *内容*:
+** Topics の基礎
+** Partitions（スケーリングと順序）
+** Producer の基礎
+** Consumer の基礎
+** Partitioning と Keys
+** Consumer Groups とリバランシング
+** Topic のレプリケーションとフォールトトレランス
+
+==== Module 2: Kafka Application - Producing and Consuming Messages
+* *ページ数*: 8ページ（finish含む）
+* *画像数*: 42枚
+* *内容*:
+** Producer の構築
+** Producer の実践
+** Consumer の構築
+** Consumer の実践
+** リアルタイムストリーミングアプリケーション
+** Quarkus と Kafka の統合
+
+==== Module 3: Stream Processing
+* *ページ数*: 4ページ（finish含む）
+* *画像数*: 8枚
+* *内容*:
+** Kafka Streams を使用した Web アクティビティトラッキング
+** Kafka Streams の内部動作
+
+==== Module 4: Change Data Capture
+* *ページ数*: 5ページ（finish含む）
+* *画像数*: 30枚
+* *内容*:
+** Debezium Connector のデプロイ
+** 変更イベントの検証
+** Globex Loyalty Program と CDC
+
+==== Module 5: Schema Registry
+* *ページ数*: 4ページ（finish含む）
+* *画像数*: 21枚
+* *内容*:
+** Schema Registry へのスキーマ追加
+** Schema Registry を使用したメッセージの生成と消費
+
+==== Module 6: Security
+* *ページ数*: 4ページ（finish含む）
+* *画像数*: 4枚
+* *内容*:
+** 認証（Authentication）
+** 認可と ACL（Authorization）
+
+=== 2. 画像リソース（assets/images）
+
+画像は以下のカテゴリに分類されています：
+
+* *common/* (3枚): 共通UI要素（clipboard, console_anonymous など）
+* *intro/* (1枚): イベントストリーミング概要図
+* *m1/* (35枚): Module 1 関連の図表とスクリーンショット
+* *m2/* (42枚): Module 2 関連の図表とスクリーンショット
+* *m3/* (8枚): Module 3 関連の図表とスクリーンショット
+* *m4/* (30枚): Module 4 関連の図表とスクリーンショット
+* *m5/* (21枚): Module 5 関連の図表とスクリーンショット
+* *m6/* (4枚): Module 6 関連の図表とスクリーンショット
+
+=== 3. その他のページ
+
+* *index.adoc*: トップページ
+* *intro/intro.0.adoc*: ワークショップの背景ストーリー
+* *conclusion/summary.adoc*: ワークショップまとめ
+* *myenv.adoc*: 環境設定ページ
+* *style.adoc*: スタイルガイド
+
+== 設定ファイル
+
+=== antora.yml
+プロジェクトのメタデータと属性を定義：
+
+* プロジェクト名: modules
+* タイトル: The Kafka Workshop
+* バージョン: master
+* 属性:
+** `streams`: Red Hat Streams for Apache Kafka
+** `registry`: Red Hat build of Apicurio Registry
+
+=== default-site.yml
+Antora サイトの全体設定：
+
+* サイトタイトル: Streams Workshop
+* UI バンドル: RHDP Showroom Theme (v0.0.1)
+* 出力ディレクトリ: ./www
+* コンテンツソース: ./content
+
+== 開発ワークフロー
+
+=== ユーティリティスクリプト
+
+. *lab-build*: サイトをビルド
+. *lab-serve*: ローカル開発サーバーを起動
+. *lab-stop*: サーバーを停止
+. *lab-clean*: ビルド成果物をクリーンアップ
+
+=== GitHub Actions
+
+`.github/workflows/gh-pages.yml` により、GitHub Pages への自動デプロイが設定されています。
+
+== Antora 拡張機能（lib/）
+
+* *all-attributes-console-extension.js*: コンソール属性の拡張
+* *attributes-page-extension.js*: ページ属性の拡張
+* *dev-mode.js*: 開発モード機能
+* *unlisted-pages-extension.js*: 非表示ページの管理
+
+== 対象トピック
+
+このワークショップでは以下のトピックをカバー：
+
+* Apache Kafka の基礎概念
+* Producer と Consumer の実装
+* Kafka Streams によるストリーム処理
+* Debezium を使用した Change Data Capture
+* Apicurio Schema Registry の活用
+* Kafka のセキュリティ（認証・認可）
+
+== 将来の拡張（コメントアウト済み）
+
+以下のモジュールは計画中：
+
+* Module 7: Security and Encryption（詳細）
+* Module 8: Kafka and AI（MCP with Kafka）
