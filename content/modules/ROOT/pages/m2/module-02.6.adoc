@@ -23,27 +23,27 @@ Kafka Producer (メッセージの送信)
 |===
 | 側面 | Plain Java(Kafka Client) | Quarkus(Reactive Messaging)
 | Setup
-| *ProducerConfig*(bootstrap servers、serializer)を手動で設定し、*KafkaProducer* インスタンスを作成します。
+| *ProducerConfig*(bootstrap servers、serializer)を手動で設定し、 *KafkaProducer* インスタンスを作成します。
 | Emitterを注入し、*application.properties* でchannelを設定します。QuarkusがProducerライフサイクルを管理します。
 
 | Sending
 | *ProducerRecord* を作成し、*producer.send()* を呼び出し、非同期送信結果のために返されたFutureを処理します。
-| メッセージpayloadで*Emitter.send()* メソッドを呼び出します。
+| メッセージpayloadで *Emitter.send()* メソッドを呼び出します。
 |===
 
 Kafka Consumer (メッセージの受信)
 |===
 | 側面 | Plain Java(Kafka Client) | Quarkus(Reactive Messaging)
 | Setup
-| *ConsumerConfig* を手動で設定し、*KafkaConsumer* インスタンスを作成し、topicをsubscribeします。
+| *ConsumerConfig* を手動で設定し、 *KafkaConsumer* インスタンスを作成し、topicをsubscribeします。
 | *@Incoming* アノテーションでシンプルなメソッドを定義します。QuarkusがConsumerライフサイクルとsubscriptionを管理します。
 
 | Consumption Loop
-| 別のスレッドで継続的なpollingループを実行し、*ConsumerRecords* を処理する必要があります
+| 別のスレッドで継続的なpollingループを実行し、 *ConsumerRecords* を処理する必要があります
 | Quarkusはスレッド上でメッセージ処理を自動的に実行します。
 
 | Committing Offsets
-| 処理後に*consumer.commitSync()* または *consumer.commitAsync()* を手動で呼び出す必要があります。
+| 処理後に *consumer.commitSync()* または *consumer.commitAsync()* を手動で呼び出す必要があります。
 | 自動acknowledgment(offsetコミット)は、commit strategiesアトリビュート(例: throttled)によって管理されます。
 |===
 

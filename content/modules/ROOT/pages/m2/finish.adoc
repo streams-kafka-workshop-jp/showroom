@@ -1,3 +1,3 @@
 == このモジュールの完了おめでとうございます!
 
-おめでとうございます! producerとconsumer clientの作成に必要なこと、*Kafka Producer APIとKafka Consumer API*、使用できるさまざまな設定、および実際に動作するライブactivity trackingアプリケーションについて学習しました。次のモジュールに進んで*Kafka Streamsとstream processing* について学びましょう。
+おめでとうございます! producerとconsumer clientの作成に必要なこと、 *Kafka Producer APIとKafka Consumer API*、使用できるさまざまな設定、および実際に動作するライブactivity trackingアプリケーションについて学習しました。次のモジュールに進んで *Kafka Streamsとstream processing* について学びましょう。

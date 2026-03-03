@@ -30,7 +30,7 @@ image::m2/login-openshift.png[]
 +
 image::m2/devspaces-launch.png[]
 
-* workspaceが起動したら、*Yes, I trust the authors* をクリックして続行します。
+* workspaceが起動したら、 *Yes, I trust the authors* をクリックして続行します。
 +
 image::m2/devspaces-trust.png[]
 

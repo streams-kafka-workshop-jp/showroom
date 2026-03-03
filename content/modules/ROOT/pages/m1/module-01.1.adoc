@@ -89,7 +89,7 @@ kafka-topics.sh --bootstrap-server $BOOTSTRAP \
 +
 image::m1/console_anonymous.png[]
 
-* 左側のメニューで*Topics* をクリックして、topicのリストを表示します。作成した`demo` topicが表示されるはずです。このtopicには3つのpartitionがあります。
+* 左側のメニューで *Topics* をクリックして、topicのリストを表示します。作成した`demo` topicが表示されるはずです。このtopicには3つのpartitionがあります。
 +
 image::m1/console_topics.png[]
 

@@ -101,7 +101,7 @@ image::m1/roundup-image.png[]
 
 * https://amq-streams-console-{user_name}.{openshift_cluster_subdomain}/kafka[streams console, window="_amqstreams"] > topics > consumer groups > demo-cgに移動し、前に起動したconsumer cg-c1を展開します。
 
-* producerが継続的にメッセージを生成し続けると、以下に示すように、各consumerのlag、committed offset、end offsetが変化し続けることを確認します。lagは基本的に*End Offset - Committed Offset* です。lag、committed offset、end offsetの値が変化していない場合は、ページを更新してください。
+* producerが継続的にメッセージを生成し続けると、以下に示すように、各consumerのlag、committed offset、end offsetが変化し続けることを確認します。lagは基本的に *End Offset - Committed Offset* です。lag、committed offset、end offsetの値が変化していない場合は、ページを更新してください。
 +
 image::m1/lag-offset.png[]
 

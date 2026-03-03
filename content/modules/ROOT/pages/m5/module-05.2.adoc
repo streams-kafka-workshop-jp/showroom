@@ -36,7 +36,7 @@ kafka-kafka-bootstrap.kafka-{user_name}.svc.cluster.local:9092
 +
 image::m5/registry-app-prop.png[]
 
-* 左上のメニューをクリックして新しいターミナルを起動します。*Terminal > New Terminal.* を選択して新しいターミナルウィンドウを開きます。
+* 左上のメニューをクリックして新しいターミナルを起動します。 *Terminal > New Terminal.* を選択して新しいターミナルウィンドウを開きます。
 +
 image::m5/new-terminal.png[]
 
@@ -111,7 +111,7 @@ image::m5/retrieve-schema-output.png[]
 --- Enter your JSON message (single-line or multi-line, press Enter on empty line when done): ---
 ----
 
-* このメッセージをターミナルに貼り付けて、*Enterキーを2回押します*。このJSONは有効で、schema registryで定義されたスキーマに準拠しているため、受け入れられて `schema-demo` トピックに送信されるはずです。
+* このメッセージをターミナルに貼り付けて、 *Enterキーを2回押します*。このJSONは有効で、schema registryで定義されたスキーマに準拠しているため、受け入れられて `schema-demo` トピックに送信されるはずです。
 +
 [source,json,role="execute",subs=attributes+]
 ----
@@ -148,7 +148,7 @@ image::m5/retrieve-schema-output.png[]
 --- Enter your JSON message (single-line or multi-line, press Enter on empty line when done): ---
 ----
 
-* このメッセージをターミナルに貼り付けて、*Enterキーを2回押します*。このJSONは無効です。なぜなら、スキーマでは `customer_id` の型が `string` であることを示していますが、これは整数値を提供しているからです。このメッセージは受け入れられないはずです。
+* このメッセージをターミナルに貼り付けて、 *Enterキーを2回押します*。このJSONは無効です。なぜなら、スキーマでは `customer_id` の型が `string` であることを示していますが、これは整数値を提供しているからです。このメッセージは受け入れられないはずです。
 +
 [source,json,role="execute",subs=attributes+]
 ----
@@ -176,7 +176,7 @@ Caused by: java.lang.ClassCastException: value 12345 (a java.lang.Long) cannot b
 
 * link:https://service-registry-ui-{user_name}.{openshift_cluster_subdomain}/explore/my-group/schema-demo[service registry UI, window="_schema-registry"] > my-group > schema-demoに移動します
 
-* rulesタブに移動し、*Compatibility rule* 行の *Enable* ボタンをクリックします。
+* rulesタブに移動し、 *Compatibility rule* 行の *Enable* ボタンをクリックします。
 +
 image::m5/enable-rule.png[]
 
@@ -185,7 +185,7 @@ image::m5/enable-rule.png[]
 +
 image::m5/backward.png[]
 
-* Overviewタブをクリックし、*Create version* ボタンをクリックします。
+* Overviewタブをクリックし、 *Create version* ボタンをクリックします。
 +
 image::m5/create-version.png[]
 

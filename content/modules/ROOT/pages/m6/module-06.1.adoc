@@ -134,7 +134,7 @@ toolboxコンテナに接続していない場合は、*上部のターミナル
 oc rsh -n kafka-{user_name} kafka-toolbox
 ----
 
-Module 1をスキップして以前にtoolboxコンテナを作成していない場合、*Error from server (NotFound): pods "kafka-toolbox" not found* のようなエラーメッセージが表示される可能性があります。*上部のターミナル* で以下のコマンドを使用して作成してください。
+Module 1をスキップして以前にtoolboxコンテナを作成していない場合、 *Error from server (NotFound): pods "kafka-toolbox" not found* のようなエラーメッセージが表示される可能性があります。 *上部のターミナル* で以下のコマンドを使用して作成してください。
 
 [source,sh,role="execute",subs=attributes]
 ----

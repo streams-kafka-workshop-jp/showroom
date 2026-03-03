@@ -19,7 +19,7 @@ image::m4/login_credentials_page.png[]
 +
 image::m4/cool-stuff-store.png[]
 
-* 選択したアイテムをクリックして製品詳細ページを開き、*Add to Cart* ボタンをクリックしてアイテムをショッピングカートに追加します。より多くの注文をシミュレートできるように、複数のアイテムをカートに追加してください。
+* 選択したアイテムをクリックして製品詳細ページを開き、 *Add to Cart* ボタンをクリックしてアイテムをショッピングカートに追加します。より多くの注文をシミュレートできるように、複数のアイテムをカートに追加してください。
 +
 image::m4/add_to_cart.png[]
 
@@ -27,7 +27,7 @@ image::m4/add_to_cart.png[]
 +
 image::m4/cart_icon.png[]
 
-* カート内のアイテムの数量を自由に調整してください。*Proceed to Checkout* ボタンをクリックしてチェックアウトに進みます。
+* カート内のアイテムの数量を自由に調整してください。 *Proceed to Checkout* ボタンをクリックしてチェックアウトに進みます。
 +
 image::m4/proceed_to_checkout.png[]
 

@@ -35,7 +35,7 @@ image::m1/replication-broker.png[]
 
 * https://amq-streams-console-{user_name}.{openshift_cluster_subdomain}/kafka/[こちら, window="_amqstreams"]をクリックして{streams} consoleに移動し、作成したtopicを確認します。
 
-* 左側のメニューで*Topics* をクリックしてtopicのリストを表示します。作成した`demo` topicが表示されるはずです。`demo` topicをクリックして、*Partitions* タブに移動します。`demo` topicには3つのpartitionがあることを確認できます。
+* 左側のメニューで *Topics* をクリックしてtopicのリストを表示します。作成した`demo` topicが表示されるはずです。`demo` topicをクリックして、 *Partitions* タブに移動します。`demo` topicには3つのpartitionがあることを確認できます。
 +
 image::m1/partitions-image-console.png[]
 

@@ -8,7 +8,7 @@ include::../style.adoc[]
 
 前のセクションで分析したシンプルなストリーミングアプリケーションを実行してみましょう。
 
-* Devspaces IDEで、左上隅のメニューをクリックして新しいターミナルを開きます。次に*Terminal > New Terminal.* を選択して新しいターミナルウィンドウを起動します。
+* Devspaces IDEで、左上隅のメニューをクリックして新しいターミナルを開きます。次に *Terminal > New Terminal.* を選択して新しいターミナルウィンドウを起動します。
 +
 image::m2/devspaces-terminal.png[]
 
@@ -21,7 +21,7 @@ cd module-kafka-api/
 
 NOTE: ブラウザがターミナルへの貼り付けの許可を求めた場合は、*allow* をクリックしてください。
 
-* 次のコマンドを使用して*kafka-{user_name}* projectにログインします。
+* 次のコマンドを使用して *kafka-{user_name}* projectにログインします。
 +
 [source,bash,role="execute",subs=attributes+]
 ----
@@ -103,7 +103,7 @@ Error while fetching metadata with correlation id 57 : {tutorial-topic=UNKNOWN_T
 
 * *ctrl+c* を押してproducerを停止します。
 
-* このclusterでは*auto.create.topics.enable* プロパティが`false`に設定されています。これは、producerまたはconsumerが存在しないtopicにアクセスしようとした時に、*新しいtopicが自動的に作成されるかどうかを制御する* Kafka brokerの設定です。
+* このclusterでは *auto.create.topics.enable* プロパティが`false`に設定されています。これは、producerまたはconsumerが存在しないtopicにアクセスしようとした時に、 *新しいtopicが自動的に作成されるかどうかを制御する* Kafka brokerの設定です。
 
 * この設定は、producerまたはconsumerコードのタイプミスからジャンクtopicが作成されることを防ぐため、有用な設定です。
 
@@ -133,7 +133,7 @@ bash -lc '/opt/kafka/bin/kafka-topics.sh --bootstrap-server kafka-kafka-bootstra
 
 
 
-* 次のオプションは*linger.ms* です。アプリケーションのデフォルト値は0で、これはproducerがメッセージを送信する前にメッセージが蓄積されるのを待たないことを意味します。`30000`を入力してEnterキーを押します。以下の値を入力してEnterキーを押します。
+* 次のオプションは *linger.ms* です。アプリケーションのデフォルト値は0で、これはproducerがメッセージを送信する前にメッセージが蓄積されるのを待たないことを意味します。`30000`を入力してEnterキーを押します。以下の値を入力してEnterキーを押します。
 +
 [source,bash,role="execute",subs=attributes+]
 ----
@@ -178,9 +178,9 @@ Total batches across all partitions: 3
 
 * 送信されるメッセージと比較してバッチサイズが非常に大きいため、producerはバッチを送信する前にlinger.msが経過するのを待ちます。
 
-* 次に、*Enter* キーを押してメインメニューに戻ります
+* 次に、 *Enter* キーを押してメインメニューに戻ります
 
-* `1`を押して再度*Enter* キーを押し、producerを再度実行します。
+* `1`を押して再度 *Enter* キーを押し、producerを再度実行します。
 
 * バッチサイズ(16 KB)とlinger.ms(0)秒の*デフォルト値* を受け入れます。Enterキーを押す前に、何が起こるかを推測し、出力を観察してください。
 

@@ -24,7 +24,7 @@ image::m4/login-openshift.png[]
 +
 image::m4/devspaces-launch.png[]
 
-* ワークスペースが起動したら、*Yes, I trust the authors* をクリックして続行します。
+* ワークスペースが起動したら、 *Yes, I trust the authors* をクリックして続行します。
 +
 image::m4/devspaces-trust.png[]
 
@@ -56,7 +56,7 @@ globex-db.globex-{user_name}.svc.cluster.local
 +
 これはGlobex retailアプリケーションデータベースの内部DNS名です。
 
-* Dev SpacesからOpenShiftクラスターにconnectorを直接デプロイできます。*Devspaces IDE* で、左上隅のメニューをクリックして新しいターミナルを開きます。次に、*Terminal > New Terminal.* を選択して新しいターミナルウィンドウを起動します。
+* Dev SpacesからOpenShiftクラスターにconnectorを直接デプロイできます。 *Devspaces IDE* で、左上隅のメニューをクリックして新しいターミナルを開きます。次に、 *Terminal > New Terminal.* を選択して新しいターミナルウィンドウを起動します。
 +
 image::m4/devspaces-terminal.png[]
 

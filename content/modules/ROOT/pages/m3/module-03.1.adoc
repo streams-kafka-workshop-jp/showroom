@@ -30,17 +30,17 @@ image::m3/globex-home-page-featured.png[]
 +
 image::m3/swagger-ui-activity-tracking-simulator.png[]
 
-* *POST* リンクをクリックし、次に右側の*Try it out* リンクをクリックします。+
+* *POST* リンクをクリックし、次に右側の *Try it out* リンクをクリックします。+
 +
 image::m3/swagger-ui-activity-tracking-simulator-post-try.png[]
 
-* 必要に応じて、生成されるユーザーアクティビティの数を変更できます（デフォルトは100）。*Execute* をクリックして、シミュレータへのRESTコールを実行します。
+* 必要に応じて、生成されるユーザーアクティビティの数を変更できます（デフォルトは100）。 *Execute* をクリックして、シミュレータへのRESTコールを実行します。
 +
 image::m3/swagger-ui-activity-tracking-simulator-2.png[]
 
 * ブラウザウィンドウで、https://amq-streams-console-{user_name}.{openshift_cluster_subdomain}/kafka[streams for Apache Kafka console, window="_amqstreams"]のタブに移動し、*globex.tracking* topicでメッセージが生成される様子を確認します。
 
-* 数秒後、新しく計算されたおすすめ製品のリストを反映した新しいメッセージが*globex.recommendation-product-score-aggregated-changelog* topicにも表示されるはずです。
+* 数秒後、新しく計算されたおすすめ製品のリストを反映した新しいメッセージが *globex.recommendation-product-score-aggregated-changelog* topicにも表示されるはずです。
 
 * link:{globex_web_url}[Globex web application, window="_globex"]のブラウザタブに移動し、ホームページを更新して、継続的に再計算されているおすすめ製品のリストがどのように変化したかを確認してください。
 

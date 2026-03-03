@@ -66,7 +66,7 @@ image::m1/console_demo-group.png[]
 +
 image::m1/console_consumer.png[]
 
-* メッセージがconsume済み（*Committed* 列と*End Offset* 列が非ゼロ値）の任意のpartitionをクリックして詳細を表示します。
+* メッセージがconsume済み（ *Committed* 列と *End Offset* 列が非ゼロ値）の任意のpartitionをクリックして詳細を表示します。
 +
 image::m1/console_consumed_partition.png[]
 
