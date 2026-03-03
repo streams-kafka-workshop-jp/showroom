@@ -30,7 +30,7 @@ image::m3/globex-home-page-featured.png[]
 +
 image::m3/swagger-ui-activity-tracking-simulator.png[]
 
-* *POST*リンクをクリックし、次に右側の*Try it out*リンクをクリックします。+
+* *POST* リンクをクリックし、次に右側の*Try it out* リンクをクリックします。+
 +
 image::m3/swagger-ui-activity-tracking-simulator-post-try.png[]
 

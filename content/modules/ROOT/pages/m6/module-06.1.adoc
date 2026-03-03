@@ -172,7 +172,7 @@ pod "topic-create" deleted
 pod kafka-user1/topic-create terminated (Error)
 ----
 
-* これは、*認証なしでセキュアな9095 Listenerを使用している*ためです。
+* これは、*認証なしでセキュアな9095 Listenerを使用している* ためです。
 
 * このクラスタには、必要なすべての権限を持つ管理者ユーザーが既に作成されています。このユーザーを使用して、認証付きのセキュアなListenerでTopicを作成します。
 

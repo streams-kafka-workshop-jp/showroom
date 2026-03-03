@@ -89,7 +89,7 @@ Enter your choice:
 
 * `1`を入力して*オプション* 1を選択し、Enterキーを押します。
 
-* *Enter*キーを押し続けてデフォルト値を受け入れます。これによりproducerがメッセージを送信するトリガーになります。
+* *Enter* キーを押し続けてデフォルト値を受け入れます。これによりproducerがメッセージを送信するトリガーになります。
 
 * ターミナル出力にエラーが継続的にスローされることを確認できます。エラーを確認した後、*ctrl+c* を押してproducerを停止します。
 
@@ -103,7 +103,7 @@ Error while fetching metadata with correlation id 57 : {tutorial-topic=UNKNOWN_T
 
 * *ctrl+c* を押してproducerを停止します。
 
-* このclusterでは*auto.create.topics.enable*プロパティが`false`に設定されています。これは、producerまたはconsumerが存在しないtopicにアクセスしようとした時に、*新しいtopicが自動的に作成されるかどうかを制御する*Kafka brokerの設定です。
+* このclusterでは*auto.create.topics.enable* プロパティが`false`に設定されています。これは、producerまたはconsumerが存在しないtopicにアクセスしようとした時に、*新しいtopicが自動的に作成されるかどうかを制御する* Kafka brokerの設定です。
 
 * この設定は、producerまたはconsumerコードのタイプミスからジャンクtopicが作成されることを防ぐため、有用な設定です。
 
@@ -178,13 +178,13 @@ Total batches across all partitions: 3
 
 * 送信されるメッセージと比較してバッチサイズが非常に大きいため、producerはバッチを送信する前にlinger.msが経過するのを待ちます。
 
-* 次に、*Enter*キーを押してメインメニューに戻ります
+* 次に、*Enter* キーを押してメインメニューに戻ります
 
-* `1`を押して再度*Enter*キーを押し、producerを再度実行します。
+* `1`を押して再度*Enter* キーを押し、producerを再度実行します。
 
 * バッチサイズ(16 KB)とlinger.ms(0)秒の*デフォルト値* を受け入れます。Enterキーを押す前に、何が起こるかを推測し、出力を観察してください。
 
-* それではEnterキーを押してください。メッセージが*待ち時間なしで即座に送信される*ことを確認できます。これは、linger.msが0秒に設定されているためです。producerはメッセージを送信する前にメッセージが蓄積されるのを待ちません。
+* それではEnterキーを押してください。メッセージが*待ち時間なしで即座に送信される* ことを確認できます。これは、linger.msが0秒に設定されているためです。producerはメッセージを送信する前にメッセージが蓄積されるのを待ちません。
 
 * Enterキーを押して
 

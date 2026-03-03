@@ -68,7 +68,7 @@ image::m2/console_tutorial-consumer-group.png[]
 image::m2/console_consumer-lag-zero.png[]
 
 
-* Enterキーを押して再度`1`を押し、producerを再度実行します。すべての*デフォルト値を受け入れてEnterキーを押します*。メッセージが送信されることを確認してください。
+* Enterキーを押して再度`1`を押し、producerを再度実行します。すべての*デフォルト値を受け入れてEnterキーを押します* 。メッセージが送信されることを確認してください。
 
 * それではEnterキーを押して再度`2`を押し、consumerを再度実行します。今回は、プロンプトでEnterキーを押して`auto.offset.reset`、`fetch.min.bytes`、`fetch.max.wait.ms`の*デフォルト値* を選択しましょう。
 
@@ -96,7 +96,7 @@ image::m2/console_consumer-lag-zero.png[]
 
 * この例ではバイト数が1024バイトを超えることはないため、`fetch.min.bytes`は無視され、consumerはメッセージをフェッチする前に少なくとも4秒待機します。メッセージがターミナルに表示される前に約4〜6秒の遅延が確認できるはずです。
 
-* *Enter number of messages*プロンプトの場合。以下の値を入力してEnterキーを押します。メッセージが表示される前の遅延を確認できます。
+* *Enter number of messages* プロンプトの場合。以下の値を入力してEnterキーを押します。メッセージが表示される前の遅延を確認できます。
 +
 [source,bash,role="execute",subs=attributes+]
 ----

@@ -255,8 +255,8 @@ kafka-console-consumer.sh \
 * `ctrl+c`を押してConsumerを停止します。
 
 === まとめ
-ここまで見てきたのは、ACLの簡単な例です。企業は、既存のIDMからユーザーとグループを*Red Hat Single Sign-On*テクノロジーと同期して、細かいアクセス制御を実装できます。Red Hat Single Sign-OnでユーザーまたはグループのポリシーとACLルールを設定でき、Kafka管理者はこれを使用してACLによりKafkaクラスタをセキュアにできます。
+ここまで見てきたのは、ACLの簡単な例です。企業は、既存のIDMからユーザーとグループを*Red Hat Single Sign-On* テクノロジーと同期して、細かいアクセス制御を実装できます。Red Hat Single Sign-OnでユーザーまたはグループのポリシーとACLルールを設定でき、Kafka管理者はこれを使用してACLによりKafkaクラスタをセキュアにできます。
 
-Streams for Apache Kafkaは、Red Hat Single Sign-On Authorization Servicesを通じた*OAuth 2.0*トークンベースのAuthorizationの使用をサポートしており、セキュリティポリシーと権限を一元管理できます。
+Streams for Apache Kafkaは、Red Hat Single Sign-On Authorization Servicesを通じた*OAuth 2.0* トークンベースのAuthorizationの使用をサポートしており、セキュリティポリシーと権限を一元管理できます。
 
 このトピックについてさらに学びたい場合は、このlink:https://developers.redhat.com/articles/2022/05/04/use-red-hats-sso-manage-kafka-broker-authorization#[ブログ記事,window="reference"]が良い出発点です。

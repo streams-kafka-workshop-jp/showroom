@@ -24,9 +24,9 @@ image::m2/login-openshift.png[]
 
 * 認証情報を使用してログインします - `{user_name}`と`{password}`
 
-* *Allow Selected Permissions*ボタンをクリックして続行します。
+* *Allow Selected Permissions* ボタンをクリックして続行します。
 
-* Devspaces dashboardから、*open*ボタンをクリックしてworkspaceを起動します。
+* Devspaces dashboardから、*open* ボタンをクリックしてworkspaceを起動します。
 +
 image::m2/devspaces-launch.png[]
 
@@ -47,7 +47,7 @@ image::m2/module-kafka-api-dependencies.png[]
 
 このセクションでは、コードを分解し、**Kafka Producer** がどのように設定され、内部でどのように機能するかを説明します。
 
-* それでは、producerコードを見てみましょう。`module-kafka-api`フォルダで、file explorerの*src/main/java/com/kafka/tutorial/SimpleKafkaProducer.java*ファイルをクリックして開きます。
+* それでは、producerコードを見てみましょう。`module-kafka-api`フォルダで、file explorerの*src/main/java/com/kafka/tutorial/SimpleKafkaProducer.java* ファイルをクリックして開きます。
 +
 image::m2/simple-kafka-producer-nav.png[]
 
@@ -61,7 +61,7 @@ image::m2/simple-kafka-producer-nav.png[]
 === Producer設定
 * 設定は`Properties`と`ProducerConfig`の定数を使用して定義されます。`SimpleKafkaProducer.java`ファイルの43-67行目を見てください。
 
-次のセクションでは、関心事(batching、信頼性など)ごとにproducer設定オプションを整理したリファレンスがあります。**Used in example?**列は、そのオプションがサンプルコードに含まれているかどうかを示します。
+次のセクションでは、関心事(batching、信頼性など)ごとにproducer設定オプションを整理したリファレンスがあります。**Used in example?** 列は、そのオプションがサンプルコードに含まれているかどうかを示します。
 
 [IMPORTANT]
 ====

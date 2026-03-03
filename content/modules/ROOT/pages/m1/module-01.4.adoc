@@ -52,7 +52,7 @@ kafka-console-consumer.sh --bootstrap-server $BOOTSTRAP --topic demo \
 
 * producerターミナルでさらにメッセージを入力し、consumerターミナルでconsumeされることを確認します。
 
-* keyを提供していないため、メッセージはpartition間に分散される*可能性があり*、その場合は順序が保証されません。次のセクションでは、partitionとkeyを使用して順序を保証する方法を見ていきます。
+* keyを提供していないため、メッセージはpartition間に分散される*可能性があり* 、その場合は順序が保証されません。次のセクションでは、partitionとkeyを使用して順序を保証する方法を見ていきます。
 +
 NOTE: 送信するメッセージが非常に少ないため、すべてのメッセージが同じpartitionに入る可能性があります。しかし、実際の環境では1秒あたり数千のメッセージがあり、keyがない場合、メッセージは異なるpartitionに入る可能性があります。
 
@@ -66,7 +66,7 @@ image::m1/console_demo-group.png[]
 +
 image::m1/console_consumer.png[]
 
-* メッセージがconsume済み（*Committed*列と*End Offset*列が非ゼロ値）の任意のpartitionをクリックして詳細を表示します。
+* メッセージがconsume済み（*Committed* 列と*End Offset* 列が非ゼロ値）の任意のpartitionをクリックして詳細を表示します。
 +
 image::m1/console_consumed_partition.png[]
 

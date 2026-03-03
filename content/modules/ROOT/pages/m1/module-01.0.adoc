@@ -47,15 +47,15 @@ image::m1/broker_image.png[]
 +
 image::m1/console_anonymous.png[]
 
-* *Clusters overview*タブをクリックします。
+* *Clusters overview* タブをクリックします。
 +
 image::m1/console_clusters_overview.png[]
 
-* *Kafka cluster details*セクションには、Cluster名、brokerの数、Kafkaバージョンなどの詳細が表示されます。
+* *Kafka cluster details* セクションには、Cluster名、brokerの数、Kafkaバージョンなどの詳細が表示されます。
 +
 image::m1/cluster_details.png[]
 
-* *Cluster connection details*タブをクリックして、Clusterへの接続方法の詳細を確認します。
+* *Cluster connection details* タブをクリックして、Clusterへの接続方法の詳細を確認します。
 +
 image::m1/connectiond_details.png[]
 
