@@ -45,7 +45,7 @@ image::m4/order_confirmation_page.png[]
 
 * Globex retailアプリケーションでいくつかの注文を作成したので、Debezium connectorがデータベース内の対応するchange eventをキャプチャし、適切なKafkaトピックに生成したことを確認しましょう。
 
-* streams for Apache Kafka console UIを指しているブラウザタブを開きます。タブを閉じた場合は、https://amq-streams-console-{user_name}.{openshift_cluster_subdomain}[streams for Apache Kafka console, window="_amqstreams"]に移動します。
+* streams for Apache Kafka console UIを指しているブラウザタブを開きます。タブを閉じた場合は、 https://amq-streams-console-{user_name}.{openshift_cluster_subdomain}[streams for Apache Kafka console, window="_amqstreams"] に移動します。
 
 * Topicsページから、*globex.updates.public.orders* トピックを開き、トピックに1つのメッセージが含まれていることを確認します。
 +
