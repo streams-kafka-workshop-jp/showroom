@@ -62,7 +62,7 @@ image::m4/amqconsole-debezium-topic-line-items.png[]
 
 * より多くの注文をシミュレートしたい場合は、OpenShiftの _globex-{user_name}_ namespaceにデプロイされた _Order simulator_ アプリケーションを使用できます。
 
-* ブラウザウィンドウで、OpenShiftコンソールを指しているタブを開きます。コンソールのタブが開いていない場合は、{openshift_cluster_console}/topology/ns/globex-{user_name}?view=graph[OpenShift console, window="_console"]に移動します。必要に応じて、ユーザー名とパスワード（`{user_name}`/`{password}`）でログインします。
+* ブラウザウィンドウで、OpenShiftコンソールを指しているタブを開きます。コンソールのタブが開いていない場合は、 {openshift_cluster_console}/topology/ns/globex-{user_name}?view=graph[OpenShift console, window="_console"] に移動します。必要に応じて、ユーザー名とパスワード（`{user_name}`/`{password}`）でログインします。
 
 
 // * Switch to the *globex-{user_name}* namespace by selecting the namespace from the namespace selection drop-down menu in the top left.
