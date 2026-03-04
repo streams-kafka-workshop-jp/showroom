@@ -41,13 +41,13 @@ image::m4/devspaces-workspace-debezium-connector.png[]
 ** *schema.include.list*: Change Data Captureプロセスに含めるスキーマ。
 ** *table.include.list*: 含めるテーブルの名前。このユースケースでは、*customer*、*orders*、*line_item* テーブルに関心があります。
 
-* connectorをデプロイする前に、データベースホスト名のプレースホルダーを実際の値に置き換える必要があります。 *14行目で、置き換えます*
+* connectorをデプロイする前に、データベースホスト名のプレースホルダーを実際の値に置き換える必要があります。 *14行目を置き換えます*
 +
 ----
 <REPLACE WITH DATABASE HOSTNAME>
 ----
 +
-以下に
+次のように
 +
 [source,textinfo,role=execute,subs="attributes"]
 ----
