@@ -35,14 +35,14 @@ oc rsh -n kafka-{user_name} kafka-toolbox
 
 * *下部のターミナル* でconsumerを実行します。
 +
-[source,sh,role=”execute”,subs=attributes+]
+[source,sh,role="execute",subs=attributes+]
 ----
 kafka-console-consumer.sh --bootstrap-server $BOOTSTRAP --topic demo \
   --group demo-group \
   --from-beginning \
   --property print.key=true \
   --property print.partition=true \
-  --property key.separator=” | “
+  --property key.separator=" | "
 ----
 
 
@@ -56,7 +56,7 @@ kafka-console-consumer.sh --bootstrap-server $BOOTSTRAP --topic demo \
 +
 NOTE: 送信するメッセージが非常に少ないため、すべてのメッセージが同じpartitionに入る可能性があります。しかし、実際の環境では1秒あたり数千のメッセージがあり、keyがない場合、メッセージは異なるpartitionに入る可能性があります。
 
-* https://amq-streams-console-{user_name}.{openshift_cluster_subdomain}/kafka[streams console, window=”_amqstreams”] > Consumer groupsに移動します。*demo-group* consumer groupをクリックして詳細を表示します。
+* https://amq-streams-console-{user_name}.{openshift_cluster_subdomain}/kafka[streams console, window="_amqstreams"] > Consumer groupsに移動します。*demo-group* consumer groupをクリックして詳細を表示します。
 +
 image::m1/console_demo-group.png[]
 
